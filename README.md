@@ -9,3 +9,6 @@
 
 ## Projeto final - Modelagem e Preparação de dados para Aprendizado de Máquina
  - Avaliação final da matéria onde o objetivo é analisar o dataset dado e tratar da melhor forma possível para que modelos de machine learning não tenham problemas. Nessa avaliação, froam abordados temas como tratamento de nulos, enconding de variáveis categóricas ordinais e nominais, análises multivariadas utilizando tabelas pivot, técnicas de undersampling e oversampling, visualização de dados utilizando PCA e redução da dimensionalidade utilizando t-SNE.
+
+## Projeto final - Modelos Estatísticos
+ - Escolher um dataset e realizar um projeto completo, analisando os dados, realizando o tratamento adequado para uma boa interpretação e uso dos dados, realizar EDA e escolher quais variáveis serão utilizadas e rodar modelos de machine learning. Ao final, realizar a escolha do modelo e mostrar as conclusões encontradas ao avaliar o dataset.
