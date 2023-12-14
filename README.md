@@ -1,4 +1,4 @@
 # Pós-Graduação em Ciência de Dados e Big Data
-### Descrição: Projetos realizados nas matérias do curso de pós-graduação em Ciência de Dados e Big Data, modalidade presencial, ofertado pela universidade PUC Minas
+### Descrição: Projetos realizados nas matérias do curso de pós-graduação em Ciência de Dados e Big Data, modalidade presencial, ofertado pela universidade PUC Minas. Em cada pasta está um readme completo com um resumo de cada trabalho, com os principais pontos
 ## Projeto final da matéria Estatística Geral - Teoria e Aaplicações
- - Escolher um dataset e realizar uma análise exploratória de dados, explicando as informações encontradas e o motivo de serem informações relevantes
+ - Escolher um dataset e realizar uma análise exploratória de dados, explicando as informações encontradas e o motivo de serem informações relevantes. O dataset escolhido contém os salários de vários empregos nas áreas de dados e machine learning, assim como os países do empregado e empresa, taxa de trabalho remoto e outros. O dataset foi tratado para uma melhor análise, com cada passo sendo explicado. Com isso, foi realizada a EDA com comentários a cada ponto.
