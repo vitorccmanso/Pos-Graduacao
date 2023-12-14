@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="Modelo-Logico" id="Project-2326" database="PostgreSQL" >
+	<schema name="projeto" catalogname="Modelo-Logico" >
+		<table name="clt_cliente" >
+			<column name="clt_id" type="integer" jt="4" mandatory="y" />
+			<column name="clt_nome" type="varchar" length="40" jt="12" mandatory="y" />
+			<column name="clt_fil_id" type="integer" jt="4" mandatory="y" />
+			<index name="pk_clt_cliente" unique="PRIMARY_KEY" >
+				<column name="clt_id" />
+			</index>
+			<fk name="fk_clt_cliente_fil_filial" to_schema="Modelo-Logico.projeto" to_table="fil_filial" >
+				<fk_column name="clt_fil_id" pk="fil_id" />
+			</fk>
+		</table>
+		<table name="emp_empregado" >
+			<column name="emp_id" type="integer" jt="4" mandatory="y" />
+			<column name="emp_cpf" type="char" length="11" jt="1" mandatory="y" />
+			<column name="emp_p_nome" type="varchar" length="20" jt="12" mandatory="y" />
+			<column name="emp_sobrenome" type="varchar" length="40" jt="12" mandatory="y" />
+			<column name="emp_salario" type="numeric" length="8" decimal="2" jt="2" mandatory="y" />
+			<column name="emp_sexo" type="char" length="1" jt="1" mandatory="y" />
+			<column name="emp_fil_id" type="integer" jt="4" mandatory="y" />
+			<index name="unq_emp_empregado" unique="UNIQUE_KEY" >
+				<column name="emp_cpf" />
+			</index>
+			<index name="pk_emp_empregado" unique="PRIMARY_KEY" >
+				<column name="emp_id" />
+			</index>
+			<constraint name="chk_emp_salario" >
+				<string><![CDATA[(emp_salario > 0)]]></string>
+			</constraint>
+			<constraint name="chk_emp_sexo" >
+				<string><![CDATA[(emp_sexo IN ('F', 'M', 'O'))]]></string>
+			</constraint>
+			<fk name="fk_emp_empregado_fil_filial" to_schema="Modelo-Logico.projeto" to_table="fil_filial" >
+				<fk_column name="emp_fil_id" pk="fil_id" />
+			</fk>
+		</table>
+		<table name="fil_filial" >
+			<column name="fil_id" type="integer" jt="4" mandatory="y" />
+			<column name="fil_nome" type="varchar" length="40" jt="12" mandatory="y" />
+			<column name="fil_reg_id" type="integer" jt="4" mandatory="y" />
+			<index name="pk_fil_filial" unique="PRIMARY_KEY" >
+				<column name="fil_id" />
+			</index>
+			<fk name="fk_fil_filial_reg_regiao" to_schema="Modelo-Logico.projeto" to_table="reg_regiao" >
+				<fk_column name="fil_reg_id" pk="reg_id" />
+			</fk>
+		</table>
+		<table name="for_fornecedor" >
+			<column name="for_nome" type="varchar" length="40" jt="12" mandatory="y" />
+			<column name="for_fil_id" type="integer" jt="4" mandatory="y" />
+			<column name="for_produto" type="varchar" length="20" jt="12" mandatory="y" />
+			<column name="for_tipo" type="varchar" length="20" jt="12" mandatory="y" />
+			<index name="pk_for_fornecedor" unique="PRIMARY_KEY" >
+				<column name="for_fil_id" />
+				<column name="for_nome" />
+			</index>
+			<index name="unq_for_fornecedor" unique="UNIQUE_KEY" >
+				<column name="for_nome" />
+			</index>
+			<fk name="fk_for_fornecedor_fil_filial" to_schema="Modelo-Logico.projeto" to_table="fil_filial" >
+				<fk_column name="for_fil_id" pk="fil_id" />
+			</fk>
+		</table>
+		<table name="ped_pedido" >
+			<column name="ped_emp_id" type="integer" jt="4" mandatory="y" />
+			<column name="ped_clt_id" type="integer" jt="4" mandatory="y" />
+			<column name="ped_vendas" type="integer" jt="4" mandatory="y" />
+			<index name="pk" unique="PRIMARY_KEY" >
+				<column name="ped_emp_id" />
+				<column name="ped_clt_id" />
+			</index>
+			<fk name="fk_ped_pedido_emp_empregado" to_schema="Modelo-Logico.projeto" to_table="emp_empregado" >
+				<fk_column name="ped_emp_id" pk="emp_id" />
+			</fk>
+			<fk name="fk_ped_pedido_clt_cliente" to_schema="Modelo-Logico.projeto" to_table="clt_cliente" >
+				<fk_column name="ped_clt_id" pk="clt_id" />
+			</fk>
+		</table>
+		<table name="reg_regiao" >
+			<column name="reg_id" type="integer" jt="4" mandatory="y" />
+			<column name="reg_cidade" type="varchar" length="20" jt="12" mandatory="y" />
+			<column name="reg_bairro" type="varchar" length="20" jt="12" mandatory="y" />
+			<index name="pk_reg_regiao" unique="PRIMARY_KEY" >
+				<column name="reg_id" />
+			</index>
+			<index name="unq_reg_regiao" unique="UNIQUE_KEY" >
+				<column name="reg_cidade" />
+				<column name="reg_bairro" />
+			</index>
+		</table>
+		<table name="tel_telefone" >
+			<column name="tel_clt_telefone" type="varchar" length="11" jt="12" mandatory="y" />
+			<column name="tel_clt_id" type="integer" jt="4" mandatory="y" />
+			<index name="pk_tel_telefone" unique="PRIMARY_KEY" >
+				<column name="tel_clt_telefone" />
+				<column name="tel_clt_id" />
+			</index>
+			<index name="unq_tel_telefone" unique="UNIQUE_KEY" >
+				<column name="tel_clt_telefone" />
+			</index>
+			<fk name="fk_tel_telefone_clt_cliente" to_schema="Modelo-Logico.projeto" to_table="clt_cliente" >
+				<fk_column name="tel_clt_id" pk="clt_id" />
+			</fk>
+		</table>
+	</schema>
+	<layout name="Default Layout" id="Layout-2396" confirmed="y" show_relation="columns" >
+		<entity schema="Modelo-Logico.projeto" name="clt_cliente" color="C1D8EE" x="768" y="672" />
+		<entity schema="Modelo-Logico.projeto" name="emp_empregado" color="C1D8EE" x="1152" y="368" />
+		<entity schema="Modelo-Logico.projeto" name="fil_filial" color="C1D8EE" x="576" y="448" />
+		<entity schema="Modelo-Logico.projeto" name="for_fornecedor" color="C1D8EE" x="544" y="192" />
+		<entity schema="Modelo-Logico.projeto" name="ped_pedido" color="C1D8EE" x="1104" y="672" />
+		<entity schema="Modelo-Logico.projeto" name="reg_regiao" color="C1D8EE" x="256" y="432" />
+		<entity schema="Modelo-Logico.projeto" name="tel_telefone" color="C1D8EE" x="960" y="800" />
+		<callout x="48" y="48" pointer="Round" >
+			<comment><![CDATA[This is a layout - a diagram with tools.
+- Create new entities by right-clicking the layout. 
+- Double-click entity headers to edit.
+- For a better understanding of the schema, create multiple layouts.
+- Deploy the model into the database by converting it first to the physical design.]]></comment>
+		</callout>
+	</layout>
+</project>
