@@ -10,7 +10,7 @@
  - **PostgreSQL**
  - **Site para realizar o esquema ER**: https://creately.com/lp/er-diagram-tool-online/
 
-## Imagens
+## Resultados
 Após o fim do trabalho, os esquemas ER e Lógico ficaram de acordo com as imagens abaixo, obedecendo as restrições estabelecidas.
 ![modelo_er](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/fb6b932a-40c4-4260-aa0b-4ebd5a64c21e)
 ![modelo_lógico](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/b5ec8d3f-7e92-4bc1-963b-35a3116d819b)
