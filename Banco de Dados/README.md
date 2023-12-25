@@ -1,4 +1,5 @@
 # Criação de um banco de dados - Visão Geral
+ - O projeto completo pode ser visualizado pelo arquivo em pdf
  - Um conjunto de regras para o banco de dados foi desenvolvido
  - O esquema deve conter pelo menos uma entidade fraca, um relacionamento M:N, um atributo composto, um atributo multivalorado, um atributo chave composto, e uma entidade com mais de um atributo chave. Deve conter pelo menos cinco entidades
  - Foi desenvolvido o diagrama entidade-relacionamento, esquema lógico e esquema físico
