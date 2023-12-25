@@ -21,5 +21,4 @@ Durante o processo da EDA, foram explorados tópicos como salários, quais categ
 ![imagem1](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/40bcf4d4-c9eb-4e4a-b05b-c6a98f72cb16)
 ![imagem2](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/638bc714-fb91-4a2a-9ef0-6d89f86ac7c9)
 ![imagem3](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/deec2b3e-8463-4a11-8d75-a880c41cab4f)
-![imagem4](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/46821db1-3ce0-4780-9ba7-f852a179b13b)
 ![imagem5](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/fa8fcfc0-279d-4698-9b8c-dc474cbf6e79)
