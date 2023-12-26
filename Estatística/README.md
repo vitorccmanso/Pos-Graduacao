@@ -1,4 +1,4 @@
-# Análise exploratória de informações gerais da área de dados - Visão Geral
+# Análise exploratória de informações gerais da área de dados - Visão Geral 
  - Foi realizada uma EDA a partir do dataset selecionado, com o foco principal nos salários
  - Engenharia de variáveis realizada, categorizando os títulos dos trabalhos informados
  - Biblioteca pycountry utilizada para melhor ligibilidade das colunas com nomes de paises
