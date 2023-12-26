@@ -19,5 +19,5 @@ Os modelos utilizados foram:
  - KNN
 
 ## Performance dos modelos
-O modeol de árvore de decisão performou muito abaixo dos outros, tendo as piores métricas de precision e recall e uma AUC bem menor. Dentre os outros modelos, o que obteve a melhor performance foi a regressão logística, onde apresentou valores de precision e recall altos e teve um tempo de treino baixo. A imagem abaixo mostra os valores da AUC de cada modelo.
+O modelo de árvore de decisão performou muito abaixo dos outros, tendo as piores métricas de precision e recall e uma AUC bem menor. Dentre os outros modelos, o que obteve a melhor performance foi a regressão logística, onde apresentou valores de precision e recall altos e teve um tempo de treino baixo. A imagem abaixo mostra os valores da AUC de cada modelo.
 ![imagem11](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/20cd1dc1-8dbe-41a0-9df8-29003b5250a0)
