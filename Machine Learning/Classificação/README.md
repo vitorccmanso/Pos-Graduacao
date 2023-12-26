@@ -11,7 +11,7 @@
 
 ## Construção dos modelos
 Primeiramente, utilizei o MinMaxScaler para colocar os dados na mesma escala e separei os dados em treino e teste de forma estratificada para manter a proporção original, com 30% para teste. 
-Testei 4 modelos diferentes e utilizei a matriz de confusão, AUC, relatório de classificação e tempo de treino de cada modelo para a escolha final.
+Testei 4 modelos diferentes e utilizei a matriz de confusão, AUC, relatório de classificação e tempo de treino de cada modelo para a escolha final. Cada modelo foi otimizado utilizando o GridSearchCV.
 Os modelos utilizados foram:
  - Regressão Logística - Modelo base
  - Árvore de Classificação
