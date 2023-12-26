@@ -14,7 +14,7 @@ Para escolher o número de clusters que cada modelo deveria criar, utilizei os m
 
 ## Construção dos modelos
 Primeiramente, utilizei o StandardScaler para colocar os dados na mesma escala.
-Testei 3 modelos diferentes e utilizei a visualização através do PCA para decidir qual o melhor modelo, assim como tabelas comparativas indicando as caracteristicas médicas de cada cluster gerado por cada modelo.
+Testei 3 modelos diferentes e utilizei a visualização através do PCA para decidir qual o melhor modelo, assim como tabelas comparativas indicando as caracteristicas médias de cada cluster gerado por cada modelo.
 Os modelos utilizados foram:
  - KMeans
  - ÁAgglomerativeClustering
