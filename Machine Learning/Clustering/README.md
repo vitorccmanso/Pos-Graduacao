@@ -1,4 +1,4 @@
-# Projeto de Clustering - Visão Geral
+# Projeto de Clustering - Visão Geral 
  - Realizar uma pequena análise dos dados e rodar modelos de clustering. Ao final, escolher o melhor modelo a partir dos resultados encontrados
  - Metodologias do cotovelo e silhueta utilizadas para encontrar o melhor número de clusters
  - PCA utilizado para visualizar os resultados dos modelos
