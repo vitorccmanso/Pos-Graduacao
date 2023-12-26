@@ -17,5 +17,5 @@
  - Ordinal Enconding aplicado na coluna 'education' a partir do dicionário criado fazendo relação entre essa coluna e a coluna 'education-num', que indicava a ordem correta para o enconding
  - Técnicas de udersampling e oversampling foram utilizadas. Para undersampling, o método .sample() foi utilizado e para oversampling, o SMOTE
  - PCA utilizado antes e depois de cada técnica de amostragem para visualização dos dados de forma bidimensional, podendo visualizar no gráfico onde estavam os dados antes das amostragens e como elas afetaram os dados
- - OneHot Enconding aplicado nas colunas 'race' e 'sex'. O resultado foi juntado as colunas numéricas do dataset.
+ - OneHot Enconding aplicado nas colunas 'race' e 'sex'. O resultado foi juntado às colunas numéricas do dataset.
  - Algoritmo t-SNE utilizado para reduzir a dimensionalidade do dataset em 2 dimensões
