@@ -32,9 +32,11 @@ Além disso, a biblioteca Locust foi utilizada apra realizar testes de carga no 
 
 ![imagem25](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/83f0b6c0-75a7-4bda-a18d-c2b040a34329)
 ![imagem26](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/020a5be4-6a33-4273-8e0a-2051d638d0bd)
-![imagem27](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/9adfe4a3-fde4-4082-9057-93d629112097)
+![imagem27](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/b5e4d3ab-a15c-428d-98b6-0526ff86b222)
 
 Para colocar isso em produção, foi necesário utilizar o docker e transformar todo o projeto em uma imagem. Com isso, foi feito um repositório no DockerHub onde essa imagem foi enviada, e foi feito um grupo de recursos no site da Azure e um aplicativo web. No aplicativo web, o código para produção deve ser a própria imagem docker que foi criada, que está armazenada no DockerHub. Ao realizar essa implementação, o projeto está online para qualquer um utilizar.
 
 ![imagem23](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/818b9977-49b1-4d0c-93ab-7a654ab17d02)
 ![imagem24](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/a629b3d7-7d6a-4576-8482-22ef08ef6be2)
+![imagem28](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/3c9f7253-41fa-4a31-9c76-952bd8538a89)
+![imagem29](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/f1911d07-06d8-4fea-8e23-ab8eeaf81c83)
