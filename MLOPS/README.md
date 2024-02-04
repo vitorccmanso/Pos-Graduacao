@@ -8,7 +8,6 @@
  - Uso do docker para criar imagem do projeto inteiro e utilização do DockerHub para armazenar essa imagem
  - Criação de uma instância de contâiner e de um aplicativo web na Azure para o modelo poder ser acessado e qualquer um possa realizar previsões
  - [Link para acesso ao projeto](https://fetalhealth-api.azurewebsites.net/docs#) -> Aplicativo Web
- - [Link alternativo ao projeto](http://fetalhealth-testvitor-api.gngtdvancfh0fjbe.brazilsouth.azurecontainer.io/docs#/) -> Instância de contâiner
 
 ## Recursos utilizados
  - **Python**: 3.9
