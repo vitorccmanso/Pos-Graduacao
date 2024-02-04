@@ -6,7 +6,7 @@
  - Utilização da fastAPI para carregar o modelo registrado e escolhido e realizar predições com dados customizados pelo usuário
  - Biblioteca Locust utilizada para realizar um teste de carga no modelo, simulando 500 usuários
  - Uso do docker para criar imagem do projeto inteiro e utilização do DockerHub para armazenar essa imagem
- - Criação de uma instância de contâiner e de um aplicativo web na Azure para o modelo poder ser acessado e qualquer um possa realizar previsões
+ - Criação de um aplicativo web na Azure para o modelo poder ser acessado e qualquer um possa realizar previsões
  - [Link para acesso ao projeto](https://fetalhealth-api.azurewebsites.net/docs#) -> Aplicativo Web
 
 ## Recursos utilizados
@@ -16,7 +16,7 @@
  - **Para utilizar o arquivo de ambiente**: `conda env create -f environment.yml`
 
 ## Resultados
-Utilizando o DagsHub e MLflow, foi possível realizar e salvar experimentos de modelos e acompanhar suas versões. Como o DagsHub fornece um usuário e senha para autmatizaro processo de rastreio e registro de modelos, esse processo foi totalmente automatizado. As imagens abaixo mostram o repositório do DagsHub com os experimentos e a interface do MLflow.
+Utilizando o DagsHub e MLflow, foi possível realizar e salvar experimentos de modelos e acompanhar suas versões. Como o DagsHub fornece um usuário e senha para autmatizar o processo de rastreio e registro de modelos, esse processo foi totalmente automatizado. As imagens abaixo mostram o repositório do DagsHub com os experimentos e a interface do MLflow.
 
 ![imagem19](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/92a62484-a532-4d2e-a74b-d8311b1a0c69)
 ![imagem20](https://github.com/vitorccmanso/Pos-Graduacao/assets/129124026/18ccc82d-9a3f-4bef-823f-f66d19038844)
